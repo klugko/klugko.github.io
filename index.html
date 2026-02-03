@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Jean Aimé Raheriniaina (klugko) - Senior Backend & AI Engineer à Fianarantsoa, Madagascar. Expert .NET Core, FastAPI, Python, Docker/K8s, LLMs/NLP. APIs robustes, microservices, intégrations IA mesurables.">
-    <meta name="keywords" content="Jean Aimé Raheriniaina, klugko, backend engineer, AI engineer, .NET Core, FastAPI, Python, C#, Docker, Kubernetes, LLM, NLP, Madagascar developer, freelance remote">
+    <meta name="description" content="Jean Aimé Raheriniaina — Senior Backend Developer & AI Engineer from Madagascar. Expert in Python, C#, FastAPI, n8n automation. Available for freelance worldwide.">
+    <meta name="keywords" content="Jean Aimé Raheriniaina, klugko, backend developer, AI engineer, Python, C#, FastAPI, n8n, Madagascar developer, freelance remote">
     <meta name="author" content="Jean Aimé Raheriniaina">
-    <meta property="og:title" content="Jean Aimé Raheriniaina - Senior Backend & AI Engineer | klugko">
-    <meta property="og:description" content="Backend & IA orienté résultats : systèmes scalables, observabilité, LLMs. Freelance remote dispo – Madagascar.">
+    <meta property="og:title" content="Jean Aimé Raheriniaina — Senior Backend Developer & AI Engineer">
+    <meta property="og:description" content="I build robust APIs, integrate AI solutions, and automate workflows. Clean code, scalable architecture, real business impact.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://klugko.github.io">
-    <meta property="og:image" content="https://github.com/klugko.png">
+    <meta property="og:image" content="https://jeanaime-two.vercel.app/profil.jpeg">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://klugko.github.io">
-    <title>Jean Aimé Raheriniaina - Senior Backend & AI Engineer | klugko</title>
-    
+    <title>Jean Aimé Raheriniaina — Senior Backend Developer & AI Engineer</title>
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -26,32 +24,47 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
-                    colors: { primary: '#3B82F6', accent: '#8B5CF6', success: '#10B981' }
+                    colors: {
+                        primary: '#00D4FF',
+                        accent: '#8B5CF6',
+                        dark: '#0a0a0f',
+                        surface: '#12121a'
+                    }
                 }
             }
         }
     </script>
     <style>
         html { scroll-behavior: smooth; }
-        .badge { @apply px-3 py-1 rounded-full text-xs font-semibold; }
-        .badge-expert { @apply bg-green-600 text-white; }
-        .badge-avance { @apply bg-blue-600 text-white; }
-        .badge-operationnel { @apply bg-purple-600 text-white; }
-        .timeline-line::before {
-            content: '';
+        body { background: #0a0a0f; }
+        .gradient-text {
+            background: linear-gradient(135deg, #00D4FF, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glow-card {
+            background: rgba(18, 18, 26, 0.8);
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .glow-card:hover {
+            border-color: rgba(0, 212, 255, 0.3);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.1);
+        }
+        .hero-glow {
             position: absolute;
-            left: 40px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(to bottom, #3B82F6, #8B5CF6);
-            border-radius: 2px;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.15;
         }
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 20px #8B5CF6; }
-            50% { box-shadow: 0 0 40px #3B82F6; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
         }
-        .pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
     </style>
 
     <!-- Structured Data -->
@@ -61,182 +74,117 @@
       "@type": "Person",
       "name": "Jean Aimé Raheriniaina",
       "alternateName": "klugko",
-      "jobTitle": "Senior Backend & AI Engineer",
+      "jobTitle": "Senior Backend Developer & AI Engineer",
       "url": "https://klugko.github.io",
-      "image": "https://github.com/klugko.png",
+      "image": "https://jeanaime-two.vercel.app/profil.jpeg",
       "email": "jeanaime.dev@gmail.com",
-      "telephone": "+261349329926",
-      "address": { "@type": "PostalAddress", "addressLocality": "Fianarantsoa", "addressCountry": "MG" },
-      "sameAs": ["https://github.com/klugko", "https://www.linkedin.com/in/jean-aim%C3%A9-raheriniaina-7b1543267"]
+      "address": { "@type": "PostalAddress", "addressLocality": "Madagascar", "addressCountry": "MG" },
+      "sameAs": ["https://github.com/klugko", "https://www.linkedin.com/in/jean-aim%C3%A9-raheriniaina-7b1543267", "https://jeanaime-two.vercel.app"]
     }
     </script>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans leading-relaxed overflow-x-hidden">
-    <!-- Nav -->
-    <nav class="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-lg z-50 shadow-2xl border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold text-primary">klugko</a>
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#about" class="hover:text-accent transition"><span class="lang-fr">À propos</span><span class="lang-en hidden">About</span></a>
-                <a href="#skills" class="hover:text-accent transition"><span class="lang-fr">Compétences</span><span class="lang-en hidden">Skills</span></a>
-                <a href="#experience" class="hover:text-accent transition"><span class="lang-fr">Expériences</span><span class="lang-en hidden">Experience</span></a>
-                <a href="#projects" class="hover:text-accent transition"><span class="lang-fr">Projets</span><span class="lang-en hidden">Projects</span></a>
-                <a href="#contact" class="hover:text-accent transition"><span class="lang-fr">Contact</span><span class="lang-en hidden">Contact</span></a>
-                <div class="flex gap-3">
-                    <button id="flag-fr" onclick="setLang('fr')" class="text-3xl hover:scale-110 transition">🇫🇷</button>
-                    <button id="flag-en" onclick="setLang('en')" class="text-3xl hover:scale-110 transition opacity-50">🇬🇧</button>
-                </div>
+<body class="text-gray-100 font-sans leading-relaxed overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">&lt;JeanAime /&gt;</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-gray-400 hover:text-primary transition">About</a>
+                <a href="#skills" class="text-gray-400 hover:text-primary transition">Skills</a>
+                <a href="#services" class="text-gray-400 hover:text-primary transition">Services</a>
+                <a href="#contact" class="text-gray-400 hover:text-primary transition">Contact</a>
+                <a href="https://jeanaime-two.vercel.app" target="_blank" class="px-4 py-2 bg-primary/10 border border-primary/30 rounded-lg text-primary hover:bg-primary/20 transition">Full Portfolio</a>
             </div>
-            <!-- Hamburger -->
-            <button id="hamburger" class="md:hidden text-4xl">☰</button>
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden flex-col bg-gray-900/95 backdrop-blur-lg shadow-2xl md:hidden">
-            <div class="flex flex-col py-6 space-y-6 px-8 text-xl">
-                <a href="#about" class="hover:text-accent transition"><span class="lang-fr">À propos</span><span class="lang-en hidden">About</span></a>
-                <a href="#skills" class="hover:text-accent transition"><span class="lang-fr">Compétences</span><span class="lang-en hidden">Skills</span></a>
-                <a href="#experience" class="hover:text-accent transition"><span class="lang-fr">Expériences</span><span class="lang-en hidden">Experience</span></a>
-                <a href="#projects" class="hover:text-accent transition"><span class="lang-fr">Projets</span><span class="lang-en hidden">Projects</span></a>
-                <a href="#contact" class="hover:text-accent transition"><span class="lang-fr">Contact</span><span class="lang-en hidden">Contact</span></a>
-                <div class="flex gap-4 justify-center pt-4">
-                    <button id="flag-fr-mobile" onclick="setLang('fr')" class="text-4xl hover:scale-110 transition">🇫🇷</button>
-                    <button id="flag-en-mobile" onclick="setLang('en')" class="text-4xl hover:scale-110 transition opacity-50">🇬🇧</button>
-                </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-white/5">
+            <div class="flex flex-col p-6 gap-4">
+                <a href="#about" class="text-gray-400 hover:text-primary transition py-2">About</a>
+                <a href="#skills" class="text-gray-400 hover:text-primary transition py-2">Skills</a>
+                <a href="#services" class="text-gray-400 hover:text-primary transition py-2">Services</a>
+                <a href="#contact" class="text-gray-400 hover:text-primary transition py-2">Contact</a>
+                <a href="https://jeanaime-two.vercel.app" target="_blank" class="px-4 py-2 bg-primary text-dark font-semibold rounded-lg text-center">Full Portfolio</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-gray-900 pt-20">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-aos="zoom-in">
-            <img src="https://github.com/klugko.png" alt="Jean Aimé Raheriniaina" class="w-80 h-80 md:w-96 md:h-96 rounded-full shadow-2xl border-8 border-accent/50 mx-auto pulse-glow">
-            <div class="text-center md:text-left">
-                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-                    Jean Aimé Raheriniaina <span class="block text-3xl md:text-4xl mt-2">(klugko)</span>
-                </h1>
-                <p class="text-2xl md:text-3xl mb-8 text-primary">Senior Backend & AI Engineer</p>
-                <p class="text-lg md:text-xl mb-10 lang-fr">Backend & IA orienté résultats métier : latence ↓, MTTR ↓, SLO/SLI, intégrations LLMs impactantes.</p>
-                <p class="text-lg md:text-xl mb-10 lang-en hidden">Product-driven backend & AI: lower latency/MTTR, SLO/SLI, measurable LLM integrations.</p>
-                <div class="flex flex-wrap gap-6 justify-center md:justify-start">
-                    <a href="https://github.com/klugko" target="_blank" class="bg-primary hover:bg-primary/80 px-8 py-4 rounded-xl font-bold transition shadow-lg">GitHub</a>
-                    <a href="https://www.linkedin.com/in/jean-aim%C3%A9-raheriniaina-7b1543267" target="_blank" class="bg-accent hover:bg-accent/80 px-8 py-4 rounded-xl font-bold transition shadow-lg">LinkedIn</a>
-                    <a href="mailto:jeanaime.dev@gmail.com" class="border-2 border-primary hover:bg-primary/20 px-8 py-4 rounded-xl font-bold transition">Email</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center relative overflow-hidden pt-20">
+        <!-- Background Effects -->
+        <div class="hero-glow bg-primary top-1/4 -left-40 animate-float"></div>
+        <div class="hero-glow bg-accent bottom-1/4 -right-40 animate-float" style="animation-delay: -3s;"></div>
 
-    <!-- About -->
-    <section id="about" class="py-32 bg-gray-800/30" data-aos="fade-up">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-16 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"><span class="lang-fr">À PROPOS DE MOI</span><span class="lang-en hidden">ABOUT ME</span></h2>
-            <p class="text-xl leading-relaxed lang-fr">Ingénieur backend & IA orienté produit et résultats métier. J’architecture des systèmes simples à maintenir, hautement disponibles et observables, en alignant les choix techniques sur les objectifs business : latence et MTTR en baisse, déploiements fiabilisés, coûts opérationnels contenus, time-to-market accéléré et expérience utilisateur améliorée. Leader pragmatique, j’installe des standards (Clean Architecture, qualité, sécurité), j’accompagne les développeurs et je pilote la performance par des métriques SLO/SLI. Intégrations IA (LLMs/NLP) et optimisation SQL avec gains mesurables sur les cycles opérationnels, la pertinence des résultats et la stabilité en production.</p>
-            <p class="text-xl leading-relaxed lang-en hidden">Product- and outcome-driven backend & AI engineer. I design maintainable, highly available, and observable systems, aligning technical choices with business goals: lower latency and MTTR, reliable releases, controlled operational costs, faster time-to-market, and better user experience. A pragmatic team lead, I set engineering standards (Clean Architecture, quality, security), coach developers, and drive performance through SLO/SLI metrics. Experienced with LLM/NLP integrations and SQL optimization, achieving measurable gains across operational cycles, result relevance, and production stability.</p>
-        </div>
-    </section>
+        <div class="max-w-6xl mx-auto px-6 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="space-y-8 text-center lg:text-left order-2 lg:order-1">
+                    <!-- Status -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        </span>
+                        <span class="text-sm text-green-400 font-medium">Available for projects</span>
+                    </div>
 
-    <!-- Skills -->
-    <section id="skills" class="py-32" data-aos="fade-up">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-20 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"><span class="lang-fr">COMPÉTENCES TECHNIQUES</span><span class="lang-en hidden">TECHNICAL SKILLS</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl backdrop-blur hover:scale-105 transition">
-                    <h3 class="text-2xl font-bold mb-6 flex items-center"><span class="lang-fr">Backend & Architecture</span><span class="lang-en hidden">Backend & Architecture</span> <span class="badge badge-expert ml-4">Expert</span></h3>
-                    <p class="text-lg">ASP.NET Core/.NET, FastAPI, Microservices, Event-Driven, CQRS, Clean Architecture, WebSocket</p>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl backdrop-blur hover:scale-105 transition">
-                    <h3 class="text-2xl font-bold mb-6"><span class="lang-fr">Langages</span><span class="lang-en hidden">Languages</span></h3>
-                    <p class="text-lg">C# <span class="badge badge-expert">Expert</span> • Python <span class="badge badge-expert">Expert</span> • TypeScript <span class="badge badge-avance">Avancé</span> • Go <span class="badge badge-operationnel">Opérationnel</span> • SQL <span class="badge badge-expert">Expert</span></p>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl backdrop-blur hover:scale-105 transition">
-                    <h3 class="text-2xl font-bold mb-6"><span class="lang-fr">Data & Stockage</span><span class="lang-en hidden">Data & Storage</span> <span class="badge badge-avance">Avancé</span></h3>
-                    <p class="text-lg">PostgreSQL, SQL Server, Redis, MinIO</p>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl backdrop-blur hover:scale-105 transition">
-                    <h3 class="text-2xl font-bold mb-6">IA / ML <span class="badge badge-avance">Avancé</span></h3>
-                    <p class="text-lg">Transformers, OpenAI API, NLP, Computer Vision</p>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl backdrop-blur hover:scale-105 transition">
-                    <h3 class="text-2xl font-bold mb-6"><span class="lang-fr">DevOps / Cloud</span><span class="lang-en hidden">DevOps / Cloud</span> <span class="badge badge-avance">Avancé</span></h3>
-                    <p class="text-lg">Docker, Kubernetes, GitHub Actions/Bitbucket, CI/CD, observabilité</p>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl backdrop-blur hover:scale-105 transition">
-                    <h3 class="text-2xl font-bold mb-6"><span class="lang-fr">Sécurité</span><span class="lang-en hidden">Security</span> <span class="badge badge-avance">Avancé</span></h3>
-                    <p class="text-lg">JWT, RBAC, durcissement API, audit & traçabilité</p>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl backdrop-blur hover:scale-105 transition">
-                    <h3 class="text-2xl font-bold mb-6"><span class="lang-fr">Qualité</span><span class="lang-en hidden">Quality</span> <span class="badge badge-expert">Expert</span></h3>
-                    <p class="text-lg">Tests unitaires/intégration, profiling, code reviews, documentation</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">
+                            <span class="text-white">Hey, I'm</span>
+                            <span class="block gradient-text mt-2">Jean Aimé</span>
+                        </h1>
+                        <p class="text-xl sm:text-2xl text-primary font-semibold mt-4">Senior Backend Developer & AI Engineer</p>
+                    </div>
 
-    <!-- Experience - Vertical Responsive Timeline -->
-    <section id="experience" class="py-32 bg-gray-800/30" data-aos="fade-up">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-20 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"><span class="lang-fr">EXPÉRIENCES</span><span class="lang-en hidden">EXPERIENCE</span></h2>
-            <div class="timeline-line relative space-y-32">
-                <div class="space-y-32">
-                    <!-- 1. Orange -->
-                    <div class="relative">
-                        <div class="absolute left-6 top-6 w-12 h-12 bg-accent rounded-full"></div>
-                        <div class="absolute left-6 top-6 w-12 h-12 bg-accent rounded-full animate-ping"></div>
-                        <div class="ml-24 bg-gray-700/80 p-8 rounded-3xl shadow-2xl lang-fr">
-                            <h3 class="text-2xl font-bold">Formateur • Orange Digital Center (ODC), Fianarantsoa</h3>
-                            <p class="text-accent mb-4">2024 - Présent</p>
-                            <ul class="list-disc pl-6 space-y-2"><li>Cours & ateliers: Docker/Kubernetes, Git/CI/CD, architectures distribuées</li><li>Mentorat de cohortes; supports orientés cas réels et déploiements</li><li>Impact: montée en compétence accélérée; livraisons à l’heure en hausse</li></ul>
-                        </div>
-                        <div class="ml-24 bg-gray-700/80 p-8 rounded-3xl shadow-2xl lang-en hidden">
-                            <h3 class="text-2xl font-bold">Trainer • Orange Digital Center (ODC), Fianarantsoa</h3>
-                            <p class="text-accent mb-4">2024 - Present</p>
-                            <ul class="list-disc pl-6 space-y-2"><li>Hands-on courses & workshops: Docker/Kubernetes, Git/CI/CD, distributed architectures</li><li>Mentored cohorts; practice-first materials and deployments</li><li>Impact: accelerated upskilling; on-time deliveries increased</li></ul>
-                        </div>
+                    <p class="text-lg text-gray-400 max-w-xl">
+                        I build <span class="text-white font-medium">robust APIs</span>, integrate <span class="text-white font-medium">AI solutions</span>, and automate workflows with <span class="text-white font-medium">n8n</span>. Clean code, scalable architecture, real business impact.
+                    </p>
+
+                    <!-- Tech Pills -->
+                    <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
+                        <span class="px-3 py-1.5 text-sm bg-surface border border-white/10 rounded-lg">Python</span>
+                        <span class="px-3 py-1.5 text-sm bg-surface border border-white/10 rounded-lg">C#</span>
+                        <span class="px-3 py-1.5 text-sm bg-surface border border-white/10 rounded-lg">FastAPI</span>
+                        <span class="px-3 py-1.5 text-sm bg-surface border border-white/10 rounded-lg">n8n</span>
+                        <span class="px-3 py-1.5 text-sm bg-surface border border-white/10 rounded-lg">React</span>
+                        <span class="px-3 py-1.5 text-sm bg-surface border border-white/10 rounded-lg">AI/ML</span>
                     </div>
-                    <!-- 2. AccèsBanque -->
-                    <div class="relative">
-                        <div class="absolute left-6 top-6 w-12 h-12 bg-accent rounded-full"></div>
-                        <div class="absolute left-6 top-6 w-12 h-12 bg-accent rounded-full animate-ping"></div>
-                        <div class="ml-24 bg-gray-700/80 p-8 rounded-3xl shadow-2xl lang-fr">
-                            <h3 class="text-2xl font-bold">Backend Developer (Part-time) • AccèsBanque Madagascar</h3>
-                            <p class="text-accent mb-4">Juil. 2024 - Présent</p>
-                            <ul class="list-disc pl-6 space-y-2"><li>APIs bancaires ASP.NET Core & Django REST; optimisations SQL Server (index, plans d’exécution)</li><li>Industrialisation CI/CD: Docker multi-stage + Bitbucket Pipelines; observabilité initiale</li><li>Impact: latence en baisse sur endpoints critiques; déploiements plus fiables (échecs & MTTR ↓)</li></ul>
-                        </div>
-                        <div class="ml-24 bg-gray-700/80 p-8 rounded-3xl shadow-2xl lang-en hidden">
-                            <h3 class="text-2xl font-bold">Backend Developer (Part-time) • AccèsBanque Madagascar</h3>
-                            <p class="text-accent mb-4">Jul. 2024 - Present</p>
-                            <ul class="list-disc pl-6 space-y-2"><li>Banking APIs in ASP.NET Core & Django REST; SQL Server tuning (indexes, execution plans)</li><li>CI/CD industrialization: Docker multi-stage + Bitbucket Pipelines; early observability</li><li>Impact: lower latency on critical endpoints; more reliable deployments (fewer failures & lower MTTR)</li></ul>
-                        </div>
+
+                    <!-- CTA -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://jeanaime-two.vercel.app/#projects" class="px-6 py-3 bg-primary text-dark font-bold rounded-xl hover:bg-primary/90 transition text-center">View My Work →</a>
+                        <a href="#contact" class="px-6 py-3 border border-primary/50 text-primary font-semibold rounded-xl hover:bg-primary/10 transition text-center">Get In Touch</a>
                     </div>
-                    <!-- 3. Youth Computing -->
-                    <div class="relative">
-                        <div class="absolute left-6 top-6 w-12 h-12 bg-accent rounded-full"></div>
-                        <div class="absolute left-6 top-6 w-12 h-12 bg-accent rounded-full animate-ping"></div>
-                        <div class="ml-24 bg-gray-700/80 p-8 rounded-3xl shadow-2xl lang-fr">
-                            <h3 class="text-2xl font-bold">Head of Digital Innovation • Youth Computing</h3>
-                            <p class="text-accent mb-4">Jan. 2023 - Août 2025</p>
-                            <ul class="list-disc pl-6 space-y-2"><li>Pilotage technique (roadmaps, arbitrages); diffusion des bonnes pratiques (Clean Architecture)</li><li>Standardisation CI/CD, conteneurisation, quality gates & revues de code</li><li>Impact: time-to-market en hausse; adoption pipelines; dette technique maîtrisée</li></ul>
-                        </div>
-                        <div class="ml-24 bg-gray-700/80 p-8 rounded-3xl shadow-2xl lang-en hidden">
-                            <h3 class="text-2xl font-bold">Head of Digital Innovation • Youth Computing</h3>
-                            <p class="text-accent mb-4">Jan. 2023 - Aug. 2025</p>
-                            <ul class="list-disc pl-6 space-y-2"><li>Technical leadership (roadmaps, tradeoffs); adoption of best practices (Clean Architecture)</li><li>Standardized CI/CD and containerization; quality gates & code reviews</li><li>Impact: faster time-to-market; broad pipeline adoption; controlled technical debt</li></ul>
-                        </div>
+
+                    <!-- Social Links -->
+                    <div class="flex gap-4 justify-center lg:justify-start pt-4">
+                        <a href="https://github.com/klugko" target="_blank" class="p-3 bg-surface border border-white/10 rounded-xl hover:border-primary/50 hover:bg-primary/10 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jean-aim%C3%A9-raheriniaina-7b1543267" target="_blank" class="p-3 bg-surface border border-white/10 rounded-xl hover:border-blue-500/50 hover:bg-blue-500/10 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:jeanaime.dev@gmail.com" class="p-3 bg-surface border border-white/10 rounded-xl hover:border-primary/50 hover:bg-primary/10 transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </a>
                     </div>
-                    <!-- 4. Freelance -->
+                </div>
+
+                <!-- Profile Image -->
+                <div class="flex justify-center order-1 lg:order-2">
                     <div class="relative">
-                        <div class="absolute left-6 top-6 w-12 h-12 bg-accent rounded-full"></div>
-                        <div class="absolute left-6 top-6 w-12 h-12 bg-accent rounded-full animate-ping"></div>
-                        <div class="ml-24 bg-gray-700/80 p-8 rounded-3xl shadow-2xl lang-fr">
-                            <h3 class="text-2xl font-bold">Freelance Backend & AI Engineer (Remote) • Divers clients</h3>
-                            <p class="text-accent mb-4">2022 - Présent</p>
-                            <ul class="list-disc pl-6 space-y-2"><li>APIs sécurisées, microservices versionnés; intégrations (Graph APIs, paiements)</li><li>CI/CD (Docker/K8s), monitoring/alerting; objectifs SLO/SLI</li><li>Impact: charges opérationnelles en baisse, erreurs réduites, délais de livraison améliorés</li></ul>
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-full blur-2xl opacity-30"></div>
+                        <img src="https://jeanaime-two.vercel.app/profil.jpeg" alt="Jean Aimé Raheriniaina" class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-surface shadow-2xl">
+
+                        <!-- Floating badges -->
+                        <div class="absolute -bottom-2 -left-2 px-4 py-2 bg-surface border border-primary/30 rounded-xl shadow-lg">
+                            <div class="text-xl font-bold text-primary">4+</div>
+                            <div class="text-xs text-gray-400">Years</div>
                         </div>
-                        <div class="ml-24 bg-gray-700/80 p-8 rounded-3xl shadow-2xl lang-en hidden">
-                            <h3 class="text-2xl font-bold">Freelance Backend & AI Engineer (Remote) • Various clients</h3>
-                            <p class="text-accent mb-4">2022 - Present</p>
-                            <ul class="list-disc pl-6 space-y-2"><li>Designed secure APIs, versioned microservices; integrations (Graph APIs, payments)</li><li>CI/CD (Docker/K8s), monitoring/alerting; SLO/SLI goals</li><li>Impact: lower operational workload, fewer errors, improved delivery lead times</li></ul>
+                        <div class="absolute -top-2 -right-2 px-4 py-2 bg-surface border border-accent/30 rounded-xl shadow-lg">
+                            <div class="text-xl font-bold text-accent">15+</div>
+                            <div class="text-xs text-gray-400">Projects</div>
                         </div>
                     </div>
                 </div>
@@ -244,150 +192,226 @@
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="py-32" data-aos="fade-up">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-20 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"><span class="lang-fr">PROJETS RÉCENTS</span><span class="lang-en hidden">RECENT PROJECTS</span></h2>
-            <!-- FR -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lang-fr">
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left">
-                    <h3 class="text-2xl font-bold mb-4">Système de screening de CV par IA</h3>
-                    <p class="text-accent mb-6">Python, Django REST, Transformers, PostgreSQL, Docker</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>Pipeline NLP (similarité sémantique, scoring); API sécurisée (JWT/RBAC)</li><li>Résultat: screening <span class="text-success font-bold">+35%</span>; pertinence <span class="text-success font-bold">+22%</span></li></ul>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left" data-aos-delay="100">
-                    <h3 class="text-2xl font-bold mb-4">Gestion de projet assistée par IA</h3>
-                    <p class="text-accent mb-6">TypeScript, NestJS, OpenAI API, PostgreSQL, WebSocket</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>Génération de tâches/checklists, allocation & estimations assistées</li><li>Résultat: temps de planification <span class="text-success font-bold">-30%</span>; livraisons à l’heure <span class="text-success font-bold">+18%</span></li></ul>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-4">Matching Marques ↔ Influenceurs</h3>
-                    <p class="text-accent mb-6">Python, FastAPI, Pandas, K8s, Graph APIs</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>Connecteurs FB/IG/TikTok; matching audience, brand-safety & affinité</li><li>Résultat: sourcing <span class="text-success font-bold">-40%</span>; conversion <span class="text-success font-bold">+15%</span></li></ul>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left" data-aos-delay="300">
-                    <h3 class="text-2xl font-bold mb-4">E-commerce + Mobile Money</h3>
-                    <p class="text-accent mb-6">C#, ASP.NET Core, PostgreSQL, Redis, MinIO</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>Paiements Mobile Money; calculateur de livraison; facturation PDF</li><li>Résultat: erreurs de paiement <span class="text-success font-bold">-25%</span>; checkout <span class="text-success font-bold">+40%</span></li></ul>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left" data-aos-delay="400">
-                    <h3 class="text-2xl font-bold mb-4">Automatisation Community Manager (IA)</h3>
-                    <p class="text-accent mb-6">Python, FastAPI, OpenAI, n8n, Graph APIs</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>Génération de contenus, réponses, publication planifiée; modération basique</li><li>Résultat: temps de création <span class="text-success font-bold">-65%</span>; engagement <span class="text-success font-bold">+35%</span></li></ul>
-                </div>
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-surface/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">
+                About <span class="gradient-text">Me</span>
+            </h2>
+            <div class="max-w-3xl mx-auto text-center space-y-6 text-lg text-gray-400">
+                <p>
+                    I'm a <span class="text-white font-medium">Senior Backend Developer & AI Engineer</span> from Madagascar, working remotely with clients worldwide.
+                </p>
+                <p>
+                    With <span class="text-primary">4+ years of experience</span>, I specialize in backend development (Python, C#), AI integration, and workflow automation with n8n. I also build modern frontends with React and Tailwind CSS.
+                </p>
+                <p>
+                    <span class="text-white font-medium">Trilingual</span> (French, English, Malagasy) and always eager to tackle new technical challenges.
+                </p>
             </div>
-            <!-- EN -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lang-en hidden">
-                <!-- Duplicate cards in English -->
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left">
-                    <h3 class="text-2xl font-bold mb-4">AI CV Screening System</h3>
-                    <p class="text-accent mb-6">Python, Django REST, Transformers, PostgreSQL, Docker</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>NLP pipeline (semantic similarity, scoring); secure API (JWT/RBAC)</li><li>Result: screening <span class="text-success font-bold">+35%</span>; candidate relevance <span class="text-success font-bold">+22%</span></li></ul>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-6 max-w-2xl mx-auto mt-12">
+                <div class="glow-card rounded-xl p-6 text-center transition">
+                    <div class="text-3xl font-black gradient-text">4+</div>
+                    <div class="text-sm text-gray-400 mt-1">Years Experience</div>
                 </div>
-                <!-- ... (repeat all 5 with English text, same structure) -->
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left" data-aos-delay="100">
-                    <h3 class="text-2xl font-bold mb-4">AI-Assisted Project Management</h3>
-                    <p class="text-accent mb-6">TypeScript, NestJS, OpenAI API, PostgreSQL, WebSocket</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>Task/checklist generation, assisted allocation & estimation</li><li>Result: planning time <span class="text-success font-bold">-30%</span>; on-time deliveries <span class="text-success font-bold">+18%</span></li></ul>
+                <div class="glow-card rounded-xl p-6 text-center transition">
+                    <div class="text-3xl font-black gradient-text">15+</div>
+                    <div class="text-sm text-gray-400 mt-1">Projects Delivered</div>
                 </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-4">Brand ↔ Influencer Matching</h3>
-                    <p class="text-accent mb-6">Python, FastAPI, Pandas, K8s, Graph APIs</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>FB/IG/TikTok connectors; audience fit, brand-safety & affinity matching</li><li>Result: sourcing <span class="text-success font-bold">-40%</span>; conversion <span class="text-success font-bold">+15%</span></li></ul>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left" data-aos-delay="300">
-                    <h3 class="text-2xl font-bold mb-4">E-commerce + Mobile Money</h3>
-                    <p class="text-accent mb-6">C#, ASP.NET Core, PostgreSQL, Redis, MinIO</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>Mobile Money payments; delivery calculator; PDF invoicing</li><li>Result: payment errors <span class="text-success font-bold">-25%</span>; checkout speed <span class="text-success font-bold">+40%</span></li></ul>
-                </div>
-                <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl hover:scale-105 transition" data-aos="flip-left" data-aos-delay="400">
-                    <h3 class="text-2xl font-bold mb-4">AI Community Manager Automation</h3>
-                    <p class="text-accent mb-6">Python, FastAPI, OpenAI, n8n, Graph APIs</p>
-                    <ul class="list-disc pl-6 space-y-2 text-lg"><li>Content generation, replies, scheduled posting; basic moderation</li><li>Result: content creation time <span class="text-success font-bold">-65%</span>; engagement <span class="text-success font-bold">+35%</span></li></ul>
+                <div class="glow-card rounded-xl p-6 text-center transition">
+                    <div class="text-3xl font-black gradient-text">100%</div>
+                    <div class="text-sm text-gray-400 mt-1">Satisfaction</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education / Languages / Interests -->
-    <section class="py-32 bg-gray-800/30" data-aos="fade-up">
-        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl">
-                <h3 class="text-3xl font-bold mb-8 text-accent"><span class="lang-fr">FORMATION</span><span class="lang-en hidden">EDUCATION</span></h3>
-                <p class="text-lg lang-fr">Master Intelligence Artificielle<br>Licence Développement Logiciel</p>
-                <p class="text-lg lang-en hidden">Master in Artificial Intelligence <br>Bachelor in Software Development</p>
-            </div>
-            <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl">
-                <h3 class="text-3xl font-bold mb-8 text-accent">LANGUES</h3>
-                <p class="text-lg">Malagasy (natif) Français (courant) Anglais (professionnel – C1)</p>
-            </div>
-            <div class="bg-gray-800/70 p-10 rounded-3xl shadow-2xl">
-                <h3 class="text-3xl font-bold mb-8 text-accent"><span class="lang-fr">CENTRES D’INTÉRÊT</span><span class="lang-en hidden">INTERESTS</span></h3>
-                <p class="text-lg">Sports • Lecture • Voyage • Entrepreneuriat</p>
+    <!-- Skills Section -->
+    <section id="skills" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">
+                Tech <span class="gradient-text">Stack</span>
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glow-card rounded-xl p-6 transition">
+                    <h3 class="text-lg font-bold text-primary mb-4">Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs bg-dark rounded">Python</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">C#</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">FastAPI</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">Django</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">NestJS</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">.NET</span>
+                    </div>
+                </div>
+                <div class="glow-card rounded-xl p-6 transition">
+                    <h3 class="text-lg font-bold text-accent mb-4">AI & Automation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs bg-dark rounded">PyTorch</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">OpenAI</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">n8n</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">LLMs</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">NLP</span>
+                    </div>
+                </div>
+                <div class="glow-card rounded-xl p-6 transition">
+                    <h3 class="text-lg font-bold text-green-400 mb-4">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs bg-dark rounded">React</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">TypeScript</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">Tailwind</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">Next.js</span>
+                    </div>
+                </div>
+                <div class="glow-card rounded-xl p-6 transition">
+                    <h3 class="text-lg font-bold text-orange-400 mb-4">DevOps & DB</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs bg-dark rounded">Docker</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">PostgreSQL</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">MongoDB</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">Redis</span>
+                        <span class="px-2 py-1 text-xs bg-dark rounded">CI/CD</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-32" data-aos="fade-up">
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-surface/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">
+                What I <span class="gradient-text">Do</span>
+            </h2>
+            <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="glow-card rounded-xl p-6 transition">
+                    <div class="text-3xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Backend Development</h3>
+                    <p class="text-gray-400">Scalable APIs with Python, C#, TypeScript</p>
+                </div>
+                <div class="glow-card rounded-xl p-6 transition">
+                    <div class="text-3xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Frontend Development</h3>
+                    <p class="text-gray-400">Modern UIs with React.js & Tailwind CSS</p>
+                </div>
+                <div class="glow-card rounded-xl p-6 transition">
+                    <div class="text-3xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold text-white mb-2">AI Integration</h3>
+                    <p class="text-gray-400">LLMs, NLP, Computer Vision solutions</p>
+                </div>
+                <div class="glow-card rounded-xl p-6 transition">
+                    <div class="text-3xl mb-4">🔄</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Workflow Automation</h3>
+                    <p class="text-gray-400">n8n workflows for business optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">
+                Why Work <span class="gradient-text">With Me?</span>
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="flex items-start gap-4 p-4">
+                    <span class="text-2xl">🧠</span>
+                    <div>
+                        <h3 class="font-bold text-white">Strategic Thinker</h3>
+                        <p class="text-sm text-gray-400">I don't just code, I solve business problems</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4">
+                    <span class="text-2xl">💬</span>
+                    <div>
+                        <h3 class="font-bold text-white">Clear Communicator</h3>
+                        <p class="text-sm text-gray-400">Transparent updates, no surprises</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4">
+                    <span class="text-2xl">🎯</span>
+                    <div>
+                        <h3 class="font-bold text-white">Quality-Driven</h3>
+                        <p class="text-sm text-gray-400">Clean code, tested, documented</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4">
+                    <span class="text-2xl">⚡</span>
+                    <div>
+                        <h3 class="font-bold text-white">Reliable Delivery</h3>
+                        <p class="text-sm text-gray-400">On time, every time</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4">
+                    <span class="text-2xl">🌍</span>
+                    <div>
+                        <h3 class="font-bold text-white">Remote-Ready</h3>
+                        <p class="text-sm text-gray-400">4+ years with international clients</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4">
+                    <span class="text-2xl">🚀</span>
+                    <div>
+                        <h3 class="font-bold text-white">Proactive Mindset</h3>
+                        <p class="text-sm text-gray-400">I anticipate issues before they happen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-surface/50">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-16 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">CONTACT</h2>
-            <p class="text-2xl mb-12 lang-fr">Freelance remote ou CDI • Discutons de votre projet !</p>
-            <p class="text-2xl mb-12 lang-en hidden">Available for remote freelance or full-time • Let's talk!</p>
-            <form action="https://formspree.io/f/xqawkzrn" method="POST" class="space-y-8 bg-gray-800/70 p-12 rounded-3xl shadow-2xl">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <input type="text" name="name" placeholder="Nom / Name" required class="bg-gray-900/70 px-6 py-4 rounded-xl focus:outline-none focus:ring-4 focus:ring-accent transition">
-                    <input type="email" name="email" placeholder="Email" required class="bg-gray-900/70 px-6 py-4 rounded-xl focus:outline-none focus:ring-4 focus:ring-accent transition">
-                </div>
-                <textarea name="message" rows="8" placeholder="Votre message / Your message" required class="w-full bg-gray-900/70 px-6 py-4 rounded-xl focus:outline-none focus:ring-4 focus:ring-accent transition"></textarea>
-                <button type="submit" class="bg-accent hover:bg-accent/80 px-12 py-5 rounded-xl font-bold text-xl transition shadow-2xl">Envoyer / Send</button>
-            </form>
-            <div class="mt-12 flex flex-wrap justify-center gap-8 text-xl">
-                <a href="mailto:jeanaime.dev@gmail.com" class="hover:text-accent">jeanaime.dev@gmail.com</a>
-                <a href="tel:+261349329926" class="hover:text-accent">+261 34 93 299 26</a>
-                <span>Fianarantsoa, Madagascar</span>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                Let's <span class="gradient-text">Connect</span>
+            </h2>
+            <p class="text-lg text-gray-400 mb-12">
+                Open for freelance projects worldwide. Let's build something great together.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="mailto:jeanaime.dev@gmail.com" class="px-8 py-4 bg-primary text-dark font-bold rounded-xl hover:bg-primary/90 transition">
+                    jeanaime.dev@gmail.com
+                </a>
+                <a href="https://jeanaime-two.vercel.app/#contact" target="_blank" class="px-8 py-4 border border-primary/50 text-primary font-semibold rounded-xl hover:bg-primary/10 transition">
+                    Full Contact Form
+                </a>
+            </div>
+
+            <div class="flex justify-center gap-6">
+                <a href="https://github.com/klugko" target="_blank" class="text-gray-400 hover:text-white transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/jean-aim%C3%A9-raheriniaina-7b1543267" target="_blank" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+                <a href="https://wa.me/261341234567" target="_blank" class="text-gray-400 hover:text-white transition">WhatsApp</a>
+                <a href="https://jeanaime-two.vercel.app" target="_blank" class="text-gray-400 hover:text-white transition">Portfolio</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-gray-950 text-center border-t border-gray-800">
-        <p>© <span id="year"></span> klugko - Jean Aimé Raheriniaina. Tous droits réservés.</p>
+    <footer class="py-8 border-t border-white/5 text-center">
+        <p class="text-gray-500 text-sm">
+            © <span id="year"></span> Jean Aimé Raheriniaina. Building tomorrow's solutions, today.
+        </p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, easing: 'ease-out-cubic' });
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Language switch
-        function setLang(lang) {
-            const fr = document.querySelectorAll('.lang-fr');
-            const en = document.querySelectorAll('.lang-en');
-            const flagFr = [document.getElementById('flag-fr'), document.getElementById('flag-fr-mobile')];
-            const flagEn = [document.getElementById('flag-en'), document.getElementById('flag-en-mobile')];
-            if (lang === 'fr') {
-                fr.forEach(el => el.classList.remove('hidden'));
-                en.forEach(el => el.classList.add('hidden'));
-                flagFr.forEach(f => f.classList.remove('opacity-50'));
-                flagEn.forEach(f => f.classList.add('opacity-50'));
-                document.documentElement.lang = 'fr';
-            } else {
-                fr.forEach(el => el.classList.add('hidden'));
-                en.forEach(el => el.classList.remove('hidden'));
-                flagFr.forEach(f => f.classList.add('opacity-50'));
-                flagEn.forEach(f => f.classList.remove('opacity-50'));
-                document.documentElement.lang = 'en';
-            }
-        }
-        setLang('fr');
-
         // Mobile menu
-        document.getElementById('hamburger').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-            const isOpen = !document.getElementById('mobile-menu').classList.contains('hidden');
-            document.getElementById('hamburger').textContent = isOpen ? '✖' : '☰';
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
         });
     </script>
 </body>
